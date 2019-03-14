@@ -2,6 +2,7 @@ from flask import Flask
 import os
 import logging
 from logging.handlers import RotatingFileHandler
+from website_fewo import errors
 
 app = Flask(__name__)
 
