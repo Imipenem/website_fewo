@@ -1,0 +1,2 @@
+Flask
+Flask-Mail=0.9.0
