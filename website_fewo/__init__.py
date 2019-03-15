@@ -1,10 +1,26 @@
 from flask import Flask
+from flask_mail import Mail
+from website_fewo.config import Config
 import os
 import logging
 from logging.handlers import RotatingFileHandler
 from website_fewo import errors
 
+
 app = Flask(__name__)
+app.config.from_object(Config)
+
+app.config.update(dict(
+    DEBUG=True,
+    MAIL_SERVER='smtp.gmail.com',
+    MAIL_PORT=587,
+    MAIL_USE_TLS=True,
+    MAIL_USE_SSL=False,
+    MAIL_USERNAME=os.environ.get('MAIL_USERNAME'),
+    MAIL_PASSWORD=os.environ.get('MAIL_PASSWORD'),
+))
+
+mail = Mail(app)
 
 if not os.path.exists('logs'):
     os.mkdir('logs')
