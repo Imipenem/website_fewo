@@ -240,11 +240,11 @@
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
+										<input type="text" name="name" id="name" value="" required />
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
+										<input type="email" name="email" id="email" value="" required />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
@@ -266,12 +266,13 @@
 					<footer class="wrapper style1 align-center">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-							</ul>
+                            </ul>
+                            <p><a href="{{ url_for('index') }}">Impressum</a> </p>
 							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</div>
 					</footer>
