@@ -1,5 +1,4 @@
 from flask import Flask
-from website_fewo.config import Config
 import os
 import logging
 import configparser
@@ -12,7 +11,6 @@ CURRENT_DIR = os.path.abspath(os.getcwd())
 MODULE_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_PATH = os.path.join(MODULE_DIR, 'static')
 TEMPLATES_PATH = os.path.join(MODULE_DIR, 'templates')
-app.config.from_object(Config)
 
 try:
     config = configparser.ConfigParser()
