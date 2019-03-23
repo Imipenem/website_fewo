@@ -24,3 +24,8 @@ def index():
 @app.route('/')
 def goto_frontpage():
     return redirect(url_for('index'))
+
+
+@app.route('/impressum')
+def impressum():
+    return render_template('impressum.html')
