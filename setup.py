@@ -45,5 +45,10 @@ setup(
             'templates', 'static'
         ),
     },
+    entry_points={
+        'console_scripts': [
+            'website_fewo = {}.server:main'.format(module.__name__),
+        ]
+    },
     install_requires=required,
 )

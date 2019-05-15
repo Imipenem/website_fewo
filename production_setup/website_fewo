@@ -1,0 +1,9 @@
+server {
+    listen 80;
+    server_name ferienwohnung-ehmele.de www.ferienwohnung-ehmele.de.de;
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/laurin001/website_fewo/website_fewo.sock;
+    }
+}
