@@ -6,11 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Story by HTML5 UP</title>
+		<title>Ferienwohnung Ehmele</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="static/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -20,207 +20,206 @@
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-							<h1>Story</h1>
-							<p class="major">A (modular, highly tweakable) responsive one-page template designed by <a href="https://html5up.net">HTML5 UP</a> and released for free under the <a href="https://html5up.net/license">Creative Commons</a>.</p>
+							<h1>Ferienwohnung Ehmele</h1>
+							<p class="major">Willkommen auf unserer Website. Sehen sie sich um, was wir zu bieten haben.</p>
 							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Los geht´s</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="static/images/banner.jpg" alt="" />
+							<img src="{{ url_for('static', filename='images/euer Garten.jpg') }}" alt="" />
 						</div>
 					</section>
 
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<h2>Magna etiam feugiat</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<h2>Ihre Ferienwohnung</h2>
+							<p>Unsere Ferienwohnung gibt es seit 1970. Sie liegt im Dachgeschoss eines alten Bauernhauses aus dem Jahre 1929.
+                                Im Zuge der Renovierung wurde sie 2019 komplett erneuert und modernisiert.</p>
 							<ul class="actions stacked">
-								<li><a href="#gallery" class="button">Learn More</a></li>
+								<li><a href="#gallery" class="button">Erfahren sie mehr</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="static/images/spotlight01.jpg" alt="" />
+							<img src="{{ url_for('static', filename='images/EntranceUnten.jpg') }}" alt="" />
 						</div>
 					</section>
 
 				<!-- Three -->
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
-							<h2>Tempus adipiscing</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<h2>Unser Hof</h2>
+							<p>Das jetzige Haus samt seines Hofes wurde 1929 von unserem Urgroßvater erbaut. Seitdem gehört auch
+                            ein kleiner Hof mit einigen Tieren zum Haus dazu. Seit neuestem sind hier auch 2 Pferde beheimatet.</p>
 							<ul class="actions stacked">
-								<li><a href="#hof" class="button">Learn More</a></li>
+								<li><a href="#hof" class="button">Erfahren sie mehr</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="static/images/spotlight02.jpg" alt="" />
+							<img src="{{ url_for('static', filename='images/kuh.JPG') }}" alt="" />
 						</div>
 					</section>
 
 				<!-- Four -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
-							<h2>Pharetra etiam nulla</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<h2>Allgäu und Umgebung</h2>
+                            <p>Das Allgäu ist bekannt für seine Naturvielfalt und zahlreichen Freizeitangebote. Wir haben Ihnen eine kleine Auswahl
+                            zusammengestellt.</p>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="#" class="button">Erfahren sie mehr</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="static/images/spotlight03.jpg" alt="" />
+							<img src="{{ url_for('static', filename='images/gallery/fulls/BergpanoFull.jpg') }}" alt="" />
 						</div>
 					</section>
 
 				<!-- Five -->
 					<section class="wrapper style1 align-center" id="gallery">
 						<div class="inner">
-							<h2>Massa sed condimentum</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+							<h2>Bildergalerie</h2>
+                            <p>In unserer Bildergalerie können Sie Eindrücke rund um Haus und Hof sammeln.</p>
 						</div>
 
 						<!-- Gallery -->
 							<div class="gallery style2 medium lightbox onscroll-fade-in">
 								<article>
-									<a href="static/images/gallery/fulls/01.jpg" class="image">
-										<img src="static/images/gallery/thumbs/01.jpg" alt="" />
+									<a href="{{ url_for('static', filename='images/gallery/fulls/testFull.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='images/gallery/thumbs/testThumb.jpg') }}" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Eingang</h3>
+										<p>Hier sehen sie den Eingang zur Wohnung.</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
 								<article>
-									<a href="static/images/gallery/fulls/02.jpg" class="image">
-										<img src="static/images/gallery/thumbs/02.jpg" alt="" />
+									<a href="{{ url_for('static', filename='images/gallery/fulls/CouchFull.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='images/gallery/thumbs/CouchThumb.jpg') }}" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Feugiat Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Wohnzimmer</h3>
+										<p>Das Wohnzimmer wurde komplett renoviert und ummöbliert.</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
 								<article>
-									<a href="static/images/gallery/fulls/03.jpg" class="image">
-										<img src="static/images/gallery/thumbs/03.jpg" alt="" />
+									<a href="{{ url_for('static', filename='images/gallery/fulls/KücheFull.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='images/gallery/thumbs/KücheThumb.jpg') }}" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Magna Amet</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Küche</h3>
+										<p>Unsere Küche bietet Platz für bis zu 5 Personen.</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
 								<article>
-									<a href="static/images/gallery/fulls/04.jpg" class="image">
-										<img src="static/images/gallery/thumbs/04.jpg" alt="" />
+									<a href="{{ url_for('static', filename='images/gallery/fulls/SchlafFull.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='images/gallery/thumbs/SchlafThumb.jpg') }}" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Schlafzimmer</h3>
+										<p>Wir bieten ein Doppelbett...</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
 								<article>
-									<a href="static/images/gallery/fulls/05.jpg" class="image">
-										<img src="static/images/gallery/thumbs/05.jpg" alt="" />
+									<a href="{{ url_for('static', filename='images/gallery/fulls/BabySchlafFull.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='images/gallery/thumbs/BabySchlafThumb.jpg') }}" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Ultrices Magna</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Kinderschlafzimmer</h3>
+										<p>...sowie ein Kleinkindbett...</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
 								<article>
-									<a href="static/images/gallery/fulls/06.jpg" class="image">
-										<img src="static/images/gallery/thumbs/06.jpg" alt="" />
+									<a href="{{ url_for('static', filename='images/gallery/fulls/KindSchlafFull.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='images/gallery/thumbs/KindSchlafThumb.jpg') }}" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article id="hof">
-									<a href="static/images/gallery/fulls/07.jpg" class="image">
-										<img src="static/images/gallery/thumbs/07.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Kinderschlafzimmer</h3>
+										<p>...und ein eigenes Schlafzimmer für 2 Kinder.</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
 								<article>
-									<a href="static/images/gallery/fulls/08.jpg" class="image">
-										<img src="static/images/gallery/thumbs/08.jpg" alt="" />
+									<a href="{{ url_for('static', filename='images/gallery/fulls/Kind2SchlafFull.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='images/gallery/thumbs/Kind2SchlafThumb.jpg') }}" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Magna Risus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Kinderschlafzimmer</h3>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
 								<article>
-									<a href="static/images/gallery/fulls/09.jpg" class="image">
-										<img src="static/images/gallery/thumbs/09.jpg" alt="" />
+									<a href="{{ url_for('static', filename='images/gallery/fulls/SchrankFull.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='images/gallery/thumbs/SchrankThumb.jpg') }}" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Tempus Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Wohnzimmer</h3>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
 								<article>
-									<a href="static/images/gallery/fulls/10.jpg" class="image">
-										<img src="static/images/gallery/thumbs/10.jpg" alt="" />
+									<a href="{{ url_for('static', filename='images/gallery/fulls/CouchFull2.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='images/gallery/thumbs/Couch2Thumb.jpg') }}" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Sed Etiam</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Wohnzimmer</h3>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
 								<article>
-									<a href="static/images/gallery/fulls/11.jpg" class="image">
-										<img src="static/images/gallery/thumbs/11.jpg" alt="" />
+									<a href="{{ url_for('static', filename='images/gallery/fulls/BlauseeFull.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='images/gallery/thumbs/BlauseeThumb.jpg') }}" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Magna Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Blausee</h3>
+										<p>Ein ruhig gelegener Badesee: Ideal für den Sommer.</p>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
 								<article>
-									<a href="static/images/gallery/fulls/12.jpg" class="image">
-										<img src="static/images/gallery/thumbs/12.jpg" alt="" />
+									<a href="{{ url_for('static', filename='images/gallery/fulls/BergpanoFull.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='images/gallery/thumbs/BergpanoThumb.jpg') }}" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Alpen</h3>
+										<p>Genießen sie unser herrliches Bergpanorama.</p>
+										<ul class="actions fixed">
+											<li><span class="button small">Details</span></li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<a href="{{ url_for('static', filename='images/gallery/fulls/Bergpano2Full.jpg') }}" class="image">
+										<img src="{{ url_for('static', filename='images/gallery/thumbs/Bergpano2Thumb.jpg') }}" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Alpen</h3>
 										<ul class="actions fixed">
 											<li><span class="button small">Details</span></li>
 										</ul>
@@ -235,8 +234,12 @@
 				<!-- Seven -->
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
-							<h2>Get in touch</h2>
+							<h2>Schreiben Sie uns</h2>
 							<form method="post" action="">
+                                <div class="field" style="display: none">
+                                    <label for="emailSPAM">Adresse</label>
+                                    <input type="text" name="emailSPAM" id="emailSPAM"/>
+                                </div>
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
@@ -271,6 +274,7 @@
                                 <li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
                             </ul>
                             <p><a href="{{ url_for('impressum') }}">Impressum</a> </p>
+                            <p><a href="{{ url_for('dsgvo') }}">DSGVO</a> </p>
 							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</div>
 					</footer>
@@ -278,14 +282,14 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="static/assets/js/jquery.min.js"></script>
-			<script src="static/assets/js/jquery.scrollex.min.js"></script>
-			<script src="static/assets/js/jquery.scrolly.min.js"></script>
-			<script src="static/assets/js/browser.min.js"></script>
-			<script src="static/assets/js/breakpoints.min.js"></script>
-			<script src="static/assets/js/util.js"></script>
-			<script src="static/assets/js/main.js"></script>
-            <script src="static/assets/js/checkbox.js"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+            <script src="{{ url_for('static', filename='assets/js/checkbox.js') }}"></script>
 
 	</body>
 </html>
