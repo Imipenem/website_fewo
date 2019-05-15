@@ -1,0 +1,13 @@
+[Unit]
+Description=Gunicorn instance to serve website_fewo
+After=network.target
+
+[Service]
+User=laurin001
+Group=www-data
+WorkingDirectory=/home/laurin001/website_fewo
+Environment="PATH=/home/laurin001/website_fewo/dpenv/bin"
+ExecStart=/home/laurin001/website_fewo/dpenv/bin/gunicorn --workers 3 --bind unix:website_fewo.sock -m 007 website_fewo.app:app
+
+[Install]
+WantedBy=multi-user.target
