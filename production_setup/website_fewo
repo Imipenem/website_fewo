@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name ferienwohnung-ehmele.de www.ferienwohnung-ehmele.de.de;
+    server_name ferienwohnung-ehmele.de www.ferienwohnung-ehmele.de;
 
     location / {
         include proxy_params;
